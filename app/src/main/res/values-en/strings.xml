@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FaceEmotionDetectDemo</string>
+    <string name="emotion_detector">EMOTION DETECTOR</string>
+    <string name="detect_emotion">Detect Emotion</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="start_over">Start Over</string>
+    <string name="please_start_over">please start over!</string>
+    <string name="in_processing">in processing…</string>
+</resources>
