@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696238729446",
+    "firebase_url": "https://face-emotion-detector.firebaseio.com",
+    "project_id": "face-emotion-detector",
+    "storage_bucket": "face-emotion-detector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696238729446:android:0078b25ece5b09d2e6f327",
+        "android_client_info": {
+          "package_name": "edu.hust.ccstudio.ferdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696238729446-4mna92mejmruj1uelubnl30g2qmittpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGwQbZW0d37SjSnjqC_-tAphekIgtupus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696238729446-4mna92mejmruj1uelubnl30g2qmittpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
