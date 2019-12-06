@@ -15,7 +15,6 @@ package edu.hust.ccstudio.ferdemo.tflite;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.SystemClock;
-import android.text.TextUtils;
 import android.util.Log;
 
 import org.tensorflow.lite.DataType;
@@ -28,10 +27,8 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 
 public class Classifier {
@@ -105,7 +102,7 @@ public class Classifier {
         // Reads type and shape of input and output tensors, respectively.
         int imageTensorIndex = 0;
         int[] imageShape = tflite.getInputTensor(imageTensorIndex).shape(); // {1, height, width, 1}
-        Log.d(logTag, TextUtils.join(", ", Arrays.stream(imageShape).boxed().collect(Collectors.toList())));
+        // Log.d(logTag, TextUtils.join(", ", Arrays.stream(imageShape).boxed().collect(Collectors.toList())));
 
         imageSizeY = imageShape[1];
         imageSizeX = imageShape[2];
@@ -116,7 +113,7 @@ public class Classifier {
         int probabilityTensorIndex = 0;
         int[] probabilityShape =
                 tflite.getOutputTensor(probabilityTensorIndex).shape(); // {1, NUM_CLASSES}
-        Log.d(logTag, TextUtils.join(", ", Arrays.stream(probabilityShape).boxed().collect(Collectors.toList())));
+        // Log.d(logTag, TextUtils.join(", ", Arrays.stream(probabilityShape).boxed().collect(Collectors.toList())));
 
         DataType probabilityDataType = tflite.getOutputTensor(probabilityTensorIndex).dataType();
 

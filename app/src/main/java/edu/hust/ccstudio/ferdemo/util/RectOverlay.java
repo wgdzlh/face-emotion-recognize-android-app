@@ -15,7 +15,7 @@ public class RectOverlay extends GraphicOverlay.Graphic {
     static {
         mRectPaint.setColor(Color.GREEN);
         mRectPaint.setStyle(Paint.Style.STROKE);
-        mRectPaint.setStrokeWidth(3f);
+        mRectPaint.setStrokeWidth(4f);
 
 //        mTextPaint.setColor(Color.MAGENTA);
         mTextPaint.setTextSize(100f);
